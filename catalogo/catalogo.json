@@ -1,0 +1,1275 @@
+{
+ "formato": 1,
+ "versione": 202609160142,
+ "pubblicato": "2026-09-15T23:42:50.854Z",
+ "voci": [
+  {
+   "id": "dichiarazione_730",
+   "name": "Dichiarazione dei redditi 730",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 9,
+   "day": 30,
+   "reminders": [
+    60,
+    30,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "dipendente",
+    "pensionato"
+   ],
+   "condizione": "fa_730",
+   "adempimento": true,
+   "notes": "Entro il 30 settembre, precompilato o tramite CAF. Chi nell'anno non ha un datore di lavoro o l'INPS che fa da sostituto presenta il 730 senza sostituto: il rimborso arriva dall'Agenzia.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "730_precompilato",
+   "name": "730 precompilato disponibile",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 4,
+   "day": 30,
+   "reminders": [
+    0
+   ],
+   "appliesTo": [
+    "dipendente",
+    "pensionato"
+   ],
+   "condizione": "!730_caf",
+   "adempimento": true,
+   "notes": "Da oggi sul sito dell'Agenzia delle Entrate: controlla spese, familiari e rimborsi, poi invialo entro il 30 settembre."
+  },
+  {
+   "id": "prenota_caf",
+   "name": "Prenota il CAF per il 730",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 4,
+   "day": 15,
+   "reminders": [
+    7,
+    0
+   ],
+   "appliesTo": [
+    "dipendente",
+    "pensionato"
+   ],
+   "condizione": "730_caf",
+   "adempimento": true,
+   "notes": "Tra maggio e giugno i CAF si riempiono: prenota per tempo e prepara CU, ricevute delle spese e documenti dei familiari.",
+   "approxDate": true
+  },
+  {
+   "id": "dichiarazione_redditi_pf",
+   "name": "Dichiarazione dei redditi (Redditi PF)",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 10,
+   "day": 31,
+   "reminders": [
+    60,
+    30,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "adempimento": true,
+   "notes": "Modello Redditi PF, da inviare online entro il 31 ottobre (se è festivo, il primo giorno lavorativo dopo).",
+   "slittaFestivo": true
+  },
+  {
+   "id": "isee",
+   "name": "Presentazione ISEE (DSU)",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 1,
+   "day": 31,
+   "reminders": [
+    30,
+    15,
+    7
+   ],
+   "appliesTo": [
+    "dipendente",
+    "autonomo",
+    "proprietario_casa",
+    "genitore",
+    "pensionato"
+   ],
+   "adempimento": true,
+   "notes": "La DSU vale fino al 31 dicembre: rinnovala a inizio anno per bonus e agevolazioni (per l'Assegno Unico entro il 28 febbraio)."
+  },
+  {
+   "id": "imu_prima_rata",
+   "name": "IMU — Prima rata (acconto)",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 6,
+   "day": 16,
+   "reminders": [
+    30,
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "proprietario_casa"
+   ],
+   "condizione": "altri_immobili",
+   "notes": "Imposta Municipale Propria — acconto 50% calcolato sulle aliquote dell'anno precedente",
+   "slittaFestivo": true
+  },
+  {
+   "id": "imu_seconda_rata",
+   "name": "IMU — Seconda rata (saldo)",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 12,
+   "day": 16,
+   "reminders": [
+    30,
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "proprietario_casa"
+   ],
+   "condizione": "altri_immobili",
+   "notes": "Saldo IMU con le aliquote deliberate dal comune per l'anno in corso",
+   "slittaFestivo": true
+  },
+  {
+   "id": "tari",
+   "name": "TARI — Tassa rifiuti",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 6,
+   "day": 30,
+   "reminders": [
+    30,
+    15,
+    7
+   ],
+   "appliesTo": [
+    "dipendente",
+    "autonomo",
+    "proprietario_casa",
+    "genitore",
+    "pensionato"
+   ],
+   "notes": "Data indicativa: le rate TARI sono decise dal tuo Comune. Aggiorna la data con quella riportata sulla tua bolletta.",
+   "approxDate": true
+  },
+  {
+   "id": "acconto_irpef",
+   "name": "Secondo acconto imposte",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 11,
+   "day": 30,
+   "reminders": [
+    30,
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "notes": "Secondo acconto di IRPEF o imposta sostitutiva, con il secondo acconto dei contributi INPS a percentuale.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "saldo_irpef",
+   "name": "Saldo imposte + primo acconto",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 6,
+   "day": 30,
+   "reminders": [
+    30,
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "notes": "Saldo dell'anno precedente e primo acconto di IRPEF o imposta sostitutiva del forfettario, con i contributi INPS a percentuale (gestione separata o eccedenza sul minimale). Il termine viene spesso prorogato (nel 2026 al 20 luglio per forfettari e soggetti ISA): controlla quello dell'anno.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "f24_iva_trimestrale_q1",
+   "name": "IVA trimestrale — I trimestre",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 5,
+   "day": 16,
+   "reminders": [
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "!iva_mensile",
+   "notes": "Liquidazione di gennaio-marzo con la maggiorazione dell'1%, con F24.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "f24_iva_trimestrale_q2",
+   "name": "IVA trimestrale — II trimestre",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 8,
+   "day": 20,
+   "reminders": [
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "!iva_mensile",
+   "notes": "Liquidazione di aprile-giugno con la maggiorazione dell'1%, con F24. Il termine è il 20 agosto.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "f24_iva_trimestrale_q3",
+   "name": "IVA trimestrale — III trimestre",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 11,
+   "day": 16,
+   "reminders": [
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "!iva_mensile",
+   "notes": "Liquidazione di luglio-settembre con la maggiorazione dell'1%, con F24.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "f24_iva_trimestrale_q4",
+   "name": "Saldo IVA annuale",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 3,
+   "day": 16,
+   "reminders": [
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "regime_ordinario",
+   "notes": "Saldo IVA dell'anno precedente, da dichiarazione IVA. Si può rateizzare o rinviare con la maggiorazione.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "iva_mensile",
+   "name": "IVA mensile",
+   "category": "fisco",
+   "recurrence": "monthly",
+   "day": 16,
+   "reminders": [
+    5,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "iva_mensile",
+   "notes": "Liquidazione IVA del mese precedente, con F24.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "dichiarazione_iva",
+   "name": "Dichiarazione IVA annuale",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 4,
+   "day": 30,
+   "reminders": [
+    30,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "regime_ordinario",
+   "adempimento": true,
+   "notes": "Invio telematico della dichiarazione IVA dell'anno precedente.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "lipe_q1",
+   "name": "LIPE — I trimestre",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 5,
+   "day": 31,
+   "reminders": [
+    15,
+    3
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "regime_ordinario",
+   "adempimento": true,
+   "notes": "Comunicazione delle liquidazioni IVA di gennaio-marzo.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "lipe_q2",
+   "name": "LIPE — II trimestre",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 9,
+   "day": 30,
+   "reminders": [
+    15,
+    3
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "regime_ordinario",
+   "adempimento": true,
+   "notes": "Comunicazione delle liquidazioni IVA di aprile-giugno.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "lipe_q3",
+   "name": "LIPE — III trimestre",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 11,
+   "day": 30,
+   "reminders": [
+    15,
+    3
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "regime_ordinario",
+   "adempimento": true,
+   "notes": "Comunicazione delle liquidazioni IVA di luglio-settembre.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "lipe_q4",
+   "name": "LIPE — IV trimestre",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 2,
+   "day": 28,
+   "reminders": [
+    15,
+    3
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "regime_ordinario",
+   "adempimento": true,
+   "notes": "Comunicazione delle liquidazioni IVA di ottobre-dicembre. Non serve se la dichiarazione IVA annuale parte entro la stessa data.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "bollo_fatture_q1",
+   "name": "Bollo fatture elettroniche — I trimestre",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 5,
+   "day": 31,
+   "reminders": [
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "!regime_ordinario",
+   "notes": "2 € per ogni fattura senza IVA sopra 77,47 € emessa a gennaio-marzo: l'importo lo calcola l'Agenzia nel portale Fatture e Corrispettivi. Se il bollo del trimestre non supera 5.000 € si può versare con quello del trimestre dopo.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "bollo_fatture_q2",
+   "name": "Bollo fatture elettroniche — II trimestre",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 9,
+   "day": 30,
+   "reminders": [
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "!regime_ordinario",
+   "notes": "2 € per ogni fattura senza IVA sopra 77,47 € emessa a aprile-giugno: l'importo lo calcola l'Agenzia nel portale Fatture e Corrispettivi.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "bollo_fatture_q3",
+   "name": "Bollo fatture elettroniche — III trimestre",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 11,
+   "day": 30,
+   "reminders": [
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "!regime_ordinario",
+   "notes": "2 € per ogni fattura senza IVA sopra 77,47 € emessa a luglio-settembre: l'importo lo calcola l'Agenzia nel portale Fatture e Corrispettivi.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "bollo_fatture_q4",
+   "name": "Bollo fatture elettroniche — IV trimestre",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 2,
+   "day": 28,
+   "reminders": [
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "!regime_ordinario",
+   "notes": "2 € per ogni fattura senza IVA sopra 77,47 € emessa a ottobre-dicembre: l'importo lo calcola l'Agenzia nel portale Fatture e Corrispettivi.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "acconto_iva",
+   "name": "Acconto IVA annuale",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 12,
+   "day": 27,
+   "reminders": [
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "regime_ordinario",
+   "notes": "Acconto IVA di dicembre (di norma l'88% del dovuto dell'ultimo periodo dell'anno prima).",
+   "slittaFestivo": true
+  },
+  {
+   "id": "inps_contributi_autonomo_q1",
+   "name": "INPS — Contributi fissi I rata",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 5,
+   "day": 16,
+   "reminders": [
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "artigiano_commerciante",
+   "notes": "Prima rata contributi fissi INPS artigiani e commercianti",
+   "slittaFestivo": true
+  },
+  {
+   "id": "inps_contributi_autonomo_q2",
+   "name": "INPS — Contributi fissi II rata",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 8,
+   "day": 20,
+   "reminders": [
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "artigiano_commerciante",
+   "notes": "Seconda rata dei contributi fissi sul minimale INPS artigiani e commercianti, con F24.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "inps_contributi_autonomo_q3",
+   "name": "INPS — Contributi fissi III rata",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 11,
+   "day": 16,
+   "reminders": [
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "artigiano_commerciante",
+   "notes": "Terza rata contributi fissi INPS artigiani e commercianti",
+   "slittaFestivo": true
+  },
+  {
+   "id": "inps_contributi_autonomo_q4",
+   "name": "INPS — Contributi fissi IV rata",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 2,
+   "day": 16,
+   "reminders": [
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "artigiano_commerciante",
+   "notes": "Quarta rata contributi fissi INPS artigiani e commercianti (saldo anno precedente)",
+   "slittaFestivo": true
+  },
+  {
+   "id": "canone_rai",
+   "name": "Canone RAI — esenzione (senza TV)",
+   "category": "fisco",
+   "recurrence": "yearly",
+   "month": 1,
+   "day": 31,
+   "reminders": [
+    30,
+    15,
+    7
+   ],
+   "appliesTo": [
+    "dipendente",
+    "autonomo",
+    "proprietario_casa",
+    "genitore",
+    "pensionato"
+   ],
+   "condizione": "esenzione_rai",
+   "adempimento": true,
+   "notes": "Il canone si paga nella bolletta della luce. Se in casa non c'è nessun televisore, la dichiarazione di non detenzione va presentata entro il 31 gennaio per l'anno intero.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "canone_rai_over75",
+   "name": "Canone RAI — esenzione over 75",
+   "category": "fisco",
+   "recurrence": "once",
+   "month": 4,
+   "day": 30,
+   "reminders": [
+    30,
+    7
+   ],
+   "appliesTo": [
+    "pensionato"
+   ],
+   "condizione": "over75",
+   "adempimento": true,
+   "notes": "Con 75 anni compiuti entro il 31 gennaio e reddito (tuo e del coniuge) fino a 8.000 €, la dichiarazione all'Agenzia entro il 30 aprile vale per l'anno intero; chi li compie entro il 31 luglio la presenta entro il 31 luglio per il secondo semestre. Poi non va ripresentata finché restano i requisiti.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "cedolare_secca_acconto",
+   "name": "Cedolare secca — Secondo acconto",
+   "category": "casa",
+   "recurrence": "yearly",
+   "month": 11,
+   "day": 30,
+   "reminders": [
+    30,
+    15,
+    7
+   ],
+   "appliesTo": [
+    "proprietario_casa"
+   ],
+   "condizione": "affitto_cedolare",
+   "notes": "Secondo acconto (60%), oppure l'acconto intero se sotto i 257,52 €, con F24.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "cedolare_secca_saldo",
+   "name": "Cedolare secca — Saldo e primo acconto",
+   "category": "casa",
+   "recurrence": "yearly",
+   "month": 6,
+   "day": 30,
+   "reminders": [
+    30,
+    15,
+    7
+   ],
+   "appliesTo": [
+    "proprietario_casa"
+   ],
+   "condizione": "affitto_cedolare",
+   "notes": "Saldo dell'anno precedente e primo acconto (40%) con F24. Se l'acconto totale è sotto i 257,52 € si versa tutto a novembre.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "manutenzione_caldaia",
+   "name": "Manutenzione caldaia",
+   "category": "casa",
+   "recurrence": "yearly",
+   "month": 10,
+   "day": 31,
+   "reminders": [
+    60,
+    30,
+    15
+   ],
+   "appliesTo": [
+    "dipendente",
+    "autonomo",
+    "proprietario_casa",
+    "genitore",
+    "pensionato"
+   ],
+   "condizione": "caldaia",
+   "notes": "Manutenzione secondo il libretto d'impianto, e il controllo dei fumi alle scadenze della tua Regione. Tocca a chi abita la casa, anche in affitto."
+  },
+  {
+   "id": "condominio_assemblea",
+   "name": "Assemblea condominiale annuale",
+   "category": "casa",
+   "recurrence": "yearly",
+   "month": 4,
+   "day": 30,
+   "reminders": [
+    15,
+    7
+   ],
+   "appliesTo": [
+    "proprietario_casa"
+   ],
+   "condizione": "condominio",
+   "adempimento": true,
+   "notes": "L'assemblea ordinaria deve tenersi entro 180 giorni dalla chiusura dell'esercizio condominiale"
+  },
+  {
+   "id": "affitto_rinnovo",
+   "name": "Contratto d'affitto — scadenza",
+   "category": "casa",
+   "recurrence": "variable",
+   "reminders": [
+    180,
+    90,
+    60
+   ],
+   "appliesTo": [
+    "dipendente",
+    "autonomo",
+    "proprietario_casa",
+    "genitore",
+    "pensionato"
+   ],
+   "condizione": "vive_in_affitto",
+   "adempimento": true,
+   "notes": "Per non rinnovare, la disdetta va mandata di solito 6 mesi prima (contratti 4+4) o 3 mesi prima (3+2): controlla il tuo contratto."
+  },
+  {
+   "id": "imposta_registro_locazione",
+   "name": "Imposta di registro — contratto d'affitto",
+   "category": "casa",
+   "recurrence": "yearly",
+   "reminders": [
+    15,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "proprietario_casa"
+   ],
+   "condizione": "inizio_contratto_locazione",
+   "notes": "Per chi affitta senza cedolare secca: si versa ogni anno con F24 Elide (codice 1501) entro 30 giorni dall'inizio della nuova annualità del contratto."
+  },
+  {
+   "id": "assicurazione_casa",
+   "name": "Assicurazione casa — rinnovo",
+   "category": "casa",
+   "recurrence": "yearly",
+   "reminders": [
+    30,
+    7
+   ],
+   "appliesTo": [
+    "proprietario_casa"
+   ],
+   "condizione": "rinnovo_assicurazione_casa",
+   "notes": "Incendio e scoppio (obbligatoria con il mutuo), responsabilità civile, danni: controlla la disdetta prima del rinnovo automatico."
+  },
+  {
+   "id": "rata_mutuo",
+   "name": "Rata del mutuo",
+   "category": "casa",
+   "recurrence": "monthly",
+   "reminders": [
+    3,
+    1
+   ],
+   "appliesTo": [
+    "proprietario_casa"
+   ],
+   "condizione": "rata_mutuo",
+   "notes": "Tieni il conto coperto qualche giorno prima dell'addebito: una rata non pagata costa interessi di mora."
+  },
+  {
+   "id": "certificazione_interessi_mutuo",
+   "name": "Certificazione interessi del mutuo — per il 730",
+   "category": "casa",
+   "recurrence": "yearly",
+   "month": 3,
+   "day": 31,
+   "reminders": [
+    14,
+    3
+   ],
+   "appliesTo": [
+    "proprietario_casa"
+   ],
+   "condizione": "mutuo",
+   "adempimento": true,
+   "notes": "La banca la manda o la mette nell'home banking di solito entro marzo. Gli interessi del mutuo per l'abitazione principale valgono il 19% fino a 4.000 € l'anno: controlla che siano nel 730 precompilato, o portala al CAF.",
+   "approxDate": true
+  },
+  {
+   "id": "contratto_gas_luce",
+   "name": "Scadenza offerta gas/luce",
+   "category": "casa",
+   "recurrence": "variable",
+   "reminders": [
+    90,
+    30,
+    15
+   ],
+   "appliesTo": [
+    "dipendente",
+    "autonomo",
+    "proprietario_casa"
+   ],
+   "adempimento": true,
+   "notes": "Verificare la data di scadenza dell'offerta dalla bolletta e aggiungere manualmente"
+  },
+  {
+   "id": "carta_identita",
+   "name": "Carta d'identità",
+   "category": "documenti",
+   "recurrence": "variable",
+   "reminders": [
+    180,
+    90,
+    30
+   ],
+   "appliesTo": [
+    "dipendente",
+    "autonomo",
+    "proprietario_casa",
+    "genitore",
+    "pensionato"
+   ],
+   "adempimento": true,
+   "notes": "Valida 10 anni (adulti), 5 anni (3-18 anni), 3 anni (under 3). Rinnovo in Comune o online"
+  },
+  {
+   "id": "passaporto",
+   "name": "Passaporto",
+   "category": "documenti",
+   "recurrence": "variable",
+   "reminders": [
+    180,
+    90,
+    30
+   ],
+   "appliesTo": [
+    "dipendente",
+    "autonomo",
+    "proprietario_casa",
+    "genitore",
+    "pensionato"
+   ],
+   "adempimento": true,
+   "notes": "Valido 10 anni (adulti). Richiesta online su Polizia di Stato o in Questura"
+  },
+  {
+   "id": "permesso_soggiorno",
+   "name": "Permesso di soggiorno",
+   "category": "documenti",
+   "recurrence": "variable",
+   "reminders": [
+    180,
+    90,
+    60,
+    30
+   ],
+   "appliesTo": [
+    "dipendente",
+    "autonomo",
+    "proprietario_casa"
+   ],
+   "adempimento": true,
+   "notes": "Durata variabile (1-2 anni). Rinnovo presso Questura entro 60 giorni dalla scadenza"
+  },
+  {
+   "id": "patente_guida",
+   "name": "Patente di guida",
+   "category": "documenti",
+   "recurrence": "variable",
+   "reminders": [
+    180,
+    90,
+    30
+   ],
+   "appliesTo": [
+    "dipendente",
+    "autonomo",
+    "proprietario_casa",
+    "genitore",
+    "pensionato"
+   ],
+   "adempimento": true,
+   "notes": "10 anni (under 50), 5 anni (50-70), 3 anni (over 70). Rinnovo in motorizzazione o online"
+  },
+  {
+   "id": "tessera_sanitaria",
+   "name": "Tessera Sanitaria / Codice Fiscale",
+   "category": "documenti",
+   "recurrence": "variable",
+   "reminders": [
+    180,
+    90,
+    30
+   ],
+   "appliesTo": [
+    "dipendente",
+    "autonomo",
+    "proprietario_casa",
+    "genitore",
+    "pensionato"
+   ],
+   "adempimento": true,
+   "notes": "Valida 6 anni — rinnovata automaticamente dall'Agenzia delle Entrate. Aggiungere la data di scadenza riportata sulla tessera"
+  },
+  {
+   "id": "cu_certificazione_unica",
+   "name": "Certificazione Unica disponibile",
+   "category": "lavoro",
+   "recurrence": "yearly",
+   "month": 3,
+   "day": 16,
+   "reminders": [
+    30,
+    15,
+    7
+   ],
+   "appliesTo": [
+    "dipendente",
+    "pensionato"
+   ],
+   "adempimento": true,
+   "notes": "Entro il 16 marzo il datore di lavoro, o l'INPS per la pensione, consegna la CU dell'anno prima: controllala, serve per il 730.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "inail",
+   "name": "INAIL — Premio assicurativo",
+   "category": "lavoro",
+   "recurrence": "yearly",
+   "month": 2,
+   "day": 16,
+   "reminders": [
+    30,
+    15,
+    7
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "artigiano",
+   "notes": "Autoliquidazione del premio INAIL degli artigiani: saldo dell'anno precedente e acconto.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "diritto_camerale",
+   "name": "Diritto annuale Camera di Commercio",
+   "category": "lavoro",
+   "recurrence": "yearly",
+   "month": 6,
+   "day": 30,
+   "reminders": [
+    15,
+    3
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "artigiano_commerciante",
+   "notes": "Per le imprese iscritte al Registro delle imprese, con F24 insieme al saldo delle imposte e con le stesse proroghe.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "ritenute_f24",
+   "name": "Ritenute e contributi dei dipendenti",
+   "category": "lavoro",
+   "recurrence": "monthly",
+   "day": 16,
+   "reminders": [
+    5,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "sostituto_imposta",
+   "notes": "Ritenute su stipendi e compensi a professionisti pagati il mese prima, con F24.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "cu_sostituto",
+   "name": "Certificazioni Uniche da inviare",
+   "category": "lavoro",
+   "recurrence": "yearly",
+   "month": 3,
+   "day": 16,
+   "reminders": [
+    30,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "sostituto_imposta",
+   "adempimento": true,
+   "notes": "Invio all'Agenzia e consegna ai percipienti delle CU dell'anno precedente.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "modello_770",
+   "name": "Modello 770",
+   "category": "lavoro",
+   "recurrence": "yearly",
+   "month": 10,
+   "day": 31,
+   "reminders": [
+    30,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "sostituto_imposta",
+   "adempimento": true,
+   "notes": "Dichiarazione dei sostituti d'imposta per l'anno precedente.",
+   "slittaFestivo": true
+  },
+  {
+   "id": "verifica_estratto_inps",
+   "name": "Verifica estratto conto INPS",
+   "category": "lavoro",
+   "recurrence": "yearly",
+   "month": 12,
+   "day": 31,
+   "reminders": [
+    30
+   ],
+   "appliesTo": [
+    "dipendente"
+   ],
+   "adempimento": true,
+   "notes": "Consigliato verificare annualmente i contributi versati accedendo a MyINPS con SPID"
+  },
+  {
+   "id": "contratto_lavoro_scadenza",
+   "name": "Contratto di lavoro — scadenza",
+   "category": "lavoro",
+   "recurrence": "once",
+   "reminders": [
+    60,
+    30,
+    7
+   ],
+   "appliesTo": [
+    "dipendente"
+   ],
+   "condizione": "scadenza_contratto_lavoro",
+   "adempimento": true,
+   "notes": "Se il contratto non viene rinnovato, la domanda di NASpI va presentata entro 68 giorni."
+  },
+  {
+   "id": "domanda_naspi",
+   "name": "Domanda NASpI (se il contratto non è rinnovato)",
+   "category": "lavoro",
+   "recurrence": "once",
+   "reminders": [
+    30,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "dipendente"
+   ],
+   "condizione": "scadenza_contratto_lavoro",
+   "adempimento": true,
+   "notes": "Entro 68 giorni dalla fine del contratto, online sul sito INPS o tramite patronato, pena la perdita. Presentata entro 8 giorni, spetta dall'ottavo giorno. Servono 13 settimane di contributi negli ultimi 4 anni."
+  },
+  {
+   "id": "modello_red",
+   "name": "Modello RED — redditi all’INPS",
+   "category": "lavoro",
+   "recurrence": "yearly",
+   "month": 2,
+   "day": 28,
+   "reminders": [
+    30,
+    7
+   ],
+   "appliesTo": [
+    "pensionato"
+   ],
+   "condizione": "red",
+   "adempimento": true,
+   "notes": "Per chi ha prestazioni legate al reddito (integrazione al minimo, maggiorazioni, assegno sociale) e redditi che non stanno tutti nel 730. La scadenza la fissa l'INPS a ogni campagna: controlla la lettera o il sito.",
+   "approxDate": true
+  },
+  {
+   "id": "rinnovo_iscrizione_albo",
+   "name": "Rinnovo iscrizione Albo professionale",
+   "category": "lavoro",
+   "recurrence": "yearly",
+   "month": 12,
+   "day": 31,
+   "reminders": [
+    60,
+    30,
+    15
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "albo",
+   "adempimento": true,
+   "notes": "Scadenza 31/12 per la maggior parte degli Albi. Verificare le scadenze specifiche del proprio Ordine",
+   "approxDate": true
+  },
+  {
+   "id": "quota_associativa",
+   "name": "Quota Ordine / associazione professionale",
+   "category": "lavoro",
+   "recurrence": "yearly",
+   "month": 1,
+   "day": 31,
+   "reminders": [
+    30,
+    15
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "condizione": "albo",
+   "notes": "Quota annuale dell'ordine o della cassa: la data la decide il tuo ordine, aggiornala.",
+   "approxDate": true
+  },
+  {
+   "id": "fatture_da_emettere",
+   "name": "Fatturazione elettronica — controllo mensile",
+   "category": "lavoro",
+   "recurrence": "monthly",
+   "day": 15,
+   "reminders": [
+    3,
+    1
+   ],
+   "appliesTo": [
+    "autonomo"
+   ],
+   "adempimento": true,
+   "notes": "Emissione fatture elettroniche entro il 15 del mese successivo all'operazione (regime ordinario)"
+  },
+  {
+   "id": "iscrizioni_scolastiche",
+   "name": "Iscrizioni scolastiche online",
+   "category": "famiglia",
+   "recurrence": "yearly",
+   "month": 2,
+   "day": 10,
+   "reminders": [
+    30,
+    15,
+    7
+   ],
+   "appliesTo": [
+    "genitore"
+   ],
+   "condizione": "iscrizione_scuola",
+   "adempimento": true,
+   "notes": "Iscrizioni online al primo anno di infanzia, primaria e secondaria, sulla piattaforma Unica del Ministero. La finestra va da metà gennaio a fine febbraio (nel 2026 fino al 21 febbraio): controlla la circolare dell'anno.",
+   "approxDate": true
+  },
+  {
+   "id": "assegno_unico_rinnovo",
+   "name": "Assegno Unico — ISEE aggiornato",
+   "category": "famiglia",
+   "recurrence": "yearly",
+   "month": 2,
+   "day": 28,
+   "reminders": [
+    30,
+    15,
+    7
+   ],
+   "appliesTo": [
+    "genitore"
+   ],
+   "adempimento": true,
+   "notes": "La domanda continua da sola, ma senza l'ISEE dell'anno da marzo arriva l'importo minimo. Chi lo presenta entro il 30 giugno recupera gli arretrati."
+  },
+  {
+   "id": "mensa_scolastica",
+   "name": "Iscrizione mensa scolastica",
+   "category": "famiglia",
+   "recurrence": "yearly",
+   "month": 9,
+   "day": 15,
+   "reminders": [
+    30,
+    15,
+    7
+   ],
+   "appliesTo": [
+    "genitore"
+   ],
+   "condizione": "figli_scuola",
+   "adempimento": true,
+   "notes": "Le date le decide il tuo Comune: aggiorna la scadenza con quella del bando.",
+   "approxDate": true
+  },
+  {
+   "id": "contributi_scolastici",
+   "name": "Contributi scolastici anno scolastico",
+   "category": "famiglia",
+   "recurrence": "yearly",
+   "month": 9,
+   "day": 30,
+   "reminders": [
+    30,
+    15,
+    7
+   ],
+   "appliesTo": [
+    "genitore"
+   ],
+   "condizione": "figli_scuola",
+   "notes": "Tasse e contributi scolastici per scuole medie e superiori — verificare la data precisa comunicata dall'istituto",
+   "approxDate": true
+  },
+  {
+   "id": "borsa_studio_universita",
+   "name": "Borsa di studio universitaria — domanda",
+   "category": "famiglia",
+   "recurrence": "yearly",
+   "month": 9,
+   "day": 1,
+   "reminders": [
+    30,
+    7
+   ],
+   "appliesTo": [
+    "genitore"
+   ],
+   "condizione": "figli_universita",
+   "adempimento": true,
+   "notes": "La domanda va all'ente per il diritto allo studio della regione dell'ateneo, di solito tra luglio e settembre, con l'ISEE per le prestazioni universitarie. Controlla il bando: la data cambia da regione a regione.",
+   "approxDate": true
+  },
+  {
+   "id": "bonus_nuovi_nati",
+   "name": "Bonus nuovi nati — domanda",
+   "category": "famiglia",
+   "recurrence": "once",
+   "reminders": [
+    60,
+    30,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "genitore"
+   ],
+   "condizione": "data_nascita",
+   "adempimento": true,
+   "notes": "Il contributo di 1.000 € per i nati nell'anno, se previsto dalla legge di bilancio, con ISEE fino a 40.000 €: la domanda all'INPS va fatta entro 120 giorni dalla nascita, pena la perdita."
+  },
+  {
+   "id": "assegno_unico_nuovo_figlio",
+   "name": "Assegno Unico — aggiungi il nuovo figlio",
+   "category": "famiglia",
+   "recurrence": "once",
+   "reminders": [
+    60,
+    30,
+    7,
+    1
+   ],
+   "appliesTo": [
+    "genitore"
+   ],
+   "condizione": "data_nascita",
+   "adempimento": true,
+   "notes": "Domanda nuova, o modifica di quella che hai, entro 120 giorni dalla nascita: così l'assegno spetta dal settimo mese di gravidanza."
+  },
+  {
+   "id": "bonus_asilo_nido",
+   "name": "Bonus nido — carica la ricevuta del mese",
+   "category": "famiglia",
+   "recurrence": "monthly",
+   "day": 28,
+   "reminders": [
+    7,
+    1
+   ],
+   "appliesTo": [
+    "genitore"
+   ],
+   "condizione": "figli_nido",
+   "adempimento": true,
+   "notes": "La ricevuta della retta di ogni mese va caricata sul sito INPS entro la fine del mese dopo: oltre, quel mese non viene rimborsato. La domanda vale fino ad agosto dell'anno in cui il bambino compie 3 anni."
+  }
+ ]
+}
