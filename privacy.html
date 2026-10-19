@@ -26,7 +26,7 @@
   <div class="wrap">
     <div class="brand"><span class="dot"></span><b>Promemo</b></div>
     <h1>Informativa sulla Privacy</h1>
-    <p class="sub">Ultimo aggiornamento: 17 settembre 2026</p>
+    <p class="sub">Ultimo aggiornamento: 19 ottobre 2026</p>
 
     <div class="card">
       <h2>1. Introduzione</h2>
@@ -70,8 +70,13 @@
         <li><strong>Identificatori pubblicitari</strong> — l'app è gratuita e mostra
         annunci tramite Google AdMob, che può raccogliere identificatori del dispositivo
         e dati di utilizzo per mostrare annunci (anche personalizzati). Vedi sezione 5.</li>
-        <li><strong>Nessuna statistica d'uso</strong> — l'app non contiene strumenti di
-        analisi o di tracciamento del comportamento, oltre a quanto fa AdMob per gli annunci.</li>
+        <li><strong>Statistiche d'uso anonime</strong> — l'app usa Google Analytics for Firebase
+        per contare in forma aggregata quali schermate e funzioni vengono usate (per esempio quante
+        scadenze vengono segnate come pagate, o da quale schermata si apre Premium). Gli eventi
+        <strong>non contengono</strong> nomi, importi o date delle tue scadenze, documenti, email o
+        altri contenuti che inserisci; Firebase associa i dati a un identificativo dell'installazione
+        dell'app. Puoi disattivarle in qualunque momento da Impostazioni › Statistiche d'uso anonime:
+        da quel momento la raccolta si ferma.</li>
       </ul>
 
       <h2>4. Finalità e basi giuridiche</h2>
@@ -80,6 +85,8 @@
         esecuzione del servizio richiesto.</li>
         <li>Inviare notifiche locali di promemoria — sul tuo dispositivo.</li>
         <li>Sincronizzazione opzionale dei dati tra dispositivi — su tua richiesta (login).</li>
+        <li>Statistiche d'uso anonime, per capire cosa migliorare — legittimo interesse; puoi
+        opporti spegnendole dalle impostazioni.</li>
         <li>Mostrare annunci per finanziare l'app gratuita — consenso, raccolto al primo avvio con il modulo di Google
         (per gli annunci personalizzati). Chi ha Premium non vede annunci.</li>
       </ul>
@@ -93,6 +100,9 @@
         annunci, oppure dalle impostazioni del dispositivo ("Annunci" / reimposta ID pubblicità).</li>
         <li><strong>Supabase</strong> (autenticazione e sincronizzazione dati) — fornitore
         di backend e database.</li>
+        <li><strong>Google Analytics for Firebase</strong> (statistiche d'uso anonime) — informativa:
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.
+        Si disattiva da Impostazioni › Statistiche d'uso anonime.</li>
       </ul>
 
       <h2>6. Conservazione dei dati</h2>
